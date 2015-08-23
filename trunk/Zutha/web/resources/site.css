@@ -1,0 +1,232 @@
+/* Notes
+border:solid black 2px;
+
+"lucida grande",geneva,lucida (good:title,links,time bad:username
+verdana (good:username bad:title,links,time)
+arial,helvetica,sans-serif (good links)
+
+*/
+body {
+    background-color:#ced3d5;
+}
+#container {
+    position:relative;
+    top:80px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:960px;
+    min-width:680px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:35px;
+    padding-bottom:40px;
+    background-color:#153A8E;
+    font-family:arial;
+}
+
+/**************** TopRight Navigation Bar *********************/
+#toplinks {
+    position:absolute;
+    right:30px;
+    top:-90px;
+    text-align:right;
+    font-size: 80%;}
+#toplinks li {
+    display: inline;
+    padding-left:2px}
+#toplinks li:before {
+    content: "\0020 | \0020";
+    padding-right:2px;}
+#toplinks li:first-child:before {
+    content: "";}
+
+/**************** Branding Logo *********************/
+#logo {
+    position:absolute;
+    left:20px;
+    top:-60px;
+    font-size:130%;
+    text-align:center;
+    z-index:1;
+}
+#logo img{
+    width:170px;
+    height:90px;
+    border:0;}
+
+/**************** Control Panel *********************/
+form#sort {
+    position:absolute;
+    left:200px;
+    top:4px;
+    width:250px;
+    color:white;}
+#SortCombo {
+    height:22px;}
+
+form#search {
+    position:absolute;
+    right:20px;
+    top:4px;
+    width:auto;}
+#SearchBox {
+    width:230px;}
+#AdvSearch {
+    position:absolute;
+    right:22px;
+    top:-20px;
+    font-size:90%;}
+
+/**************** Main Item Header *********************/
+.item_header {
+    position:relative;
+    height:30px;
+    margin-top:-6px;
+    margin-bottom:0}
+
+#Up {
+    padding:0;
+    width:18px;
+    height:22px;
+    margin-left:10px;
+    float:left;}
+
+#bread {
+    margin:0;
+    padding:0;
+    padding-top:2px;
+    margin-left:10px;
+    font-size:80%;}
+#bread li {
+    display:inline;
+    padding-left:2px}
+#bread li:before {
+    content: "\0020 \00BB \0020";
+    padding-right:2px;}
+#bread li:first-child:before {
+    content: "";
+    padding-left:0;}
+
+/**************** Items *********************/
+.item {
+    position:relative;
+    background-color:white;
+    margin-bottom:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    overflow:hidden;}
+.content {
+    width:81%;
+    float:right;}
+.MainTitle {
+    text-align:left;
+    margin:0;
+    color:#153A8E;
+    font-size:250%;}
+.SubTitle {
+    text-align:left;
+    margin:0;
+    font-family:arial;
+    font-size:130%;
+    width:100%;
+    font-weight:bold;
+    color:#153A8E;}
+.summary {
+    font-family:Arial;
+    font-size:100%;
+    width:100%;}
+
+.date {
+    position:absolute;
+    right:12px;
+    top:0;
+    font-size:80%;}
+.id {
+    position:relative;
+    text-align:left;
+    margin-left:12px;
+    margin-top:-10px;
+    margin-bottom:10px;
+    font-size:60%;
+    letter-spacing:.3px;}
+
+/* Create Item */
+.CreateItem ol {
+    list-style:none;
+    padding:0;}
+.CreateItem label {
+    display:block;
+    font-size:80%;}
+.CreateItem li {
+    margin-bottom:6px;}
+.CreateItem .submit {
+    float:right;
+}
+
+
+
+
+
+
+/* Info */
+.info {
+    text-align:center;
+    float:left;
+    width:19%;}
+.avatar {
+    max-width:100px;
+    max-height:100px;
+    margin:0;}
+.author {
+    position:relative;
+    top:-6px;
+    font-size:80%;
+    font-weight:bold;
+    font-family:verdana;}
+
+.stats {
+    position:relative;
+    margin:10px auto;
+    margin-bottom:25px;
+    font-size:70%;
+    width:105px;}
+.stats p{
+    text-align:left;
+    margin:0;}
+.stats p.worth{
+    text-align:center;}
+.item_stats {
+    margin-top:15px;}
+
+.ItemLinks {
+    font-size:80%;
+}
+
+.WorthBar {
+    position:relative;
+    margin:0 auto;
+    border: #EBEBEB 1px solid;
+    padding:1px;
+    width:101px;
+    overflow:hidden;}
+.barFill {
+    height:4px;
+    float:left;}
+.barRemain {
+    height:4px;
+    float:right;}
+
+
+
+/**************** Global Themes *********************/
+p {
+    margin:8px 0;}
+
+/* Rounded Corners */
+#container,.item {
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    -khtml-border-radius:15px;
+    border-radius:15px;
+}

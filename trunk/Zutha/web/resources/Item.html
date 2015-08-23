@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>The Website</title>
+        <link rel="stylesheet" type="text/css" href="site.css" />
+    </head>
+
+    <body><div id="container">
+
+            <!--Branding Logo-->
+            <div id="logo"><a href=""><img alt="HOME Logo" src="img/logoLeafy.gif" /></a></div>
+
+            <!--Top Right Nav Links-->
+            <div id="toplinks">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Site Info</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+
+            <!--Control Panel (Search, Sort Order controls)-->
+            <form id="sort" action="Item.html">
+                Sort By:
+                <select id="SortCombo" name="sort" onchange="this.form.submit()">
+                    <option>Item Worth</option>
+                    <option>Author Worth</option>
+                    <option>Relevance</option>
+                    <option>Date ASC</option>
+                    <option>Date DESC</option>
+                </select>
+                <noscript><input type="submit" value="Sort"  /></noscript>
+            </form>
+
+            <form id="search" name="Search" action="Item.html">
+                <input id="SearchBox" type="text" name="q" value="Search within Subitems"  />
+                <input id="SearchButton" type="submit" value="Search" />
+            </form>
+
+            <a id="AdvSearch" href="">Advanced Search</a>
+
+
+            <!-- MAIN ITEM -->
+            <div class="item" id="main">
+                <div class="item_header">
+                    <button id="Up" type="Submit"><img alt="^" src=""  /></button>
+                    <ol id="bread">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Browse</a></li>
+                        <li><a href="#">Software</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Starcraft</a></li>
+                        <li><a href="#">Useful Guides</a></li>
+                    </ol>
+                </div>                
+                <div class="date">08-Mar-09 3:13 PM</div>
+                <div class="info">
+                    <div class="id">ID=00000C9Z</div>
+                    <img class="avatar" src="img/Barney.jpg" alt="barneyii's Avatar"/>
+                    <span class="author"><p><a href="">barneyii</a></p></span>
+                    <div class="stats">
+                        <div class="author_stats">
+                            <p>Author: <b>Level 2</b></p>
+                            <div class="WorthBar">
+                                <div class="barFill" style="background-color:#009A00; width: 50px;"></div><div class="barRemain" style="background-color:#D4FFD4; width: 50px;"></div>
+                            </div>
+                            <p class="worth">$534</p>
+                        </div>
+                        <div class="item_stats">
+                            <p>Item: <b>Level 3</b></p>
+                            <div class="WorthBar">
+                                <div class="barFill" style="background-color:#FFCC00; width: 65px;"></div><div class="barRemain" style="background-color:#FFEEB2; width: 35px;"></div>
+                            </div>
+                            <p class="worth">$6,510</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h1>The Title of the Item</h1>
+                    <div class="summary">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra, turpis vitae viverra egestas, arcu arcu facilisis urna, eget semper tortor ligula a magna? Sed vulputate bibendum enim, ac facilisis mi sodales nec. Nulla lacinia, diam consequat commodo facilisis, quam tortor laoreet est, non dignissim leo turpis ut enim. Quisque malesuada, mi sit amet luctus consequat, est sem feugiat metus; in sagittis augue velit ac felis! In venenatis rutrum risus, ac rhoncus sapien lobortis nec? Maecenas vestibulum lobortis tincidunt. In consectetur nisl in lectus cursus eu dapibus sapien convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean enim magna, ornare sed lacinia non, molestie condimentum felis. Sed dapibus suscipit neque, vitae dictum metus pretium et. Vivamus egestas bibendum diam, nec pretium lacus dignissim eu. Cras ut justo vel sem aliquet tristique a in leo. Phasellus bibendum feugiat tristique. Pellentesque justo ante; ullamcorper a laoreet id, scelerisque a tellus.</p>
+                        <p>Quisque porta tempus magna. Donec ipsum dui, auctor non ullamcorper ac, volutpat ut risus! Duis dui quam, sagittis sit amet dignissim vel, hendrerit ac eros. Donec ultricies elit eget leo gravida et cursus tellus pellentesque. In neque purus, posuere at aliquam ut, scelerisque eget enim. Vestibulum felis est, gravida vel convallis in, pulvinar a tellus? Proin elit velit, varius sed ultricies in, rutrum eget nisl. Suspendisse potenti. Mauris lectus sapien, faucibus imperdiet convallis eu, ultricies eu felis. Nam porttitor metus vel mauris pretium lacinia. Mauris fringilla semper quam non scelerisque. Proin adipiscing blandit ligula, quis sagittis mauris tincidunt ac. Nulla nec nisi non neque aliquet feugiat sit amet eu enim. Vestibulum pharetra nulla vitae nisi ullamcorper dapibus fringilla risus pellentesque. Pellentesque aliquet pharetra mauris, non pharetra odio pharetra id.</p>
+                        <p>Sed rutrum tincidunt varius. In lobortis ultricies faucibus. Sed mollis blandit diam quis ullamcorper? Cras in nisl quis quam rhoncus pretium. Fusce sed justo ut justo semper sodales eget in arcu. Sed ut volutpat mauris. Ut lectus nunc, imperdiet et tristique vel, facilisis sed mauris. Duis eu lorem erat, ullamcorper dapibus orci. Nam vitae leo in quam iaculis condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUB ITEMS -->
+            <div class="item">                
+                <div class="date">01-Apr-09 11:43 PM</div>
+                <div class="info">
+                    <div class="id">ID=00000CA0</div>
+                    <img class="avatar" src="img/Chris.jpg" />
+                    <span class="author"><p>barneyii</p></span>
+                    <div class="stats">
+                        <div class="author_stats">
+                            <p>Author: <b>Level 1</b></p>
+                            <div class="WorthBar">
+                                <div class="barFill" style="background-color:#0000C2; width: 80px;"></div><div class="barRemain" style="background-color:#C7C7FF; width: 20px;"></div>
+                            </div>
+                            <p class="worth">$81</p>
+                        </div>
+                        <div class="item_stats">
+                            <p>Item: <b>Level 0</b></p>
+                            <div class="WorthBar">
+                                <div class="barFill" style="background-color:#FFFFFF; width: 0px;"></div><div class="barRemain" style="background-color:#C7C7FF; width: 100px;"></div>
+                            </div>
+                            <p class="worth">$0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>A Subtitle That Is Completely Meaningless</h2>
+                    <div class="summary">
+                        <p>Mauris sit amet viverra neque. Pellentesque enim felis, accumsan egestas aliquet vitae, tristique in mauris.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">                
+                <div class="date">03-Apr-09 1:02 AM</div>
+                <div class="info">
+                    <div class="id">ID=00007V0B</div>
+                    <img class="avatar" src="img/Apricots.jpg" />
+                    <span class="author"><p>barneyii</p></span>
+                    <div class="stats">
+                        <div class="author_stats">
+                            <p>Author: <b>Level 5</b></p>
+                            <div class="WorthBar">
+                                <div class="barFill" style="background-color:#8C0000; width: 80px;"></div><div class="barRemain" style="background-color:#FFB8B8; width: 20px;"></div>
+                            </div>
+                            <p class="worth">$805,300</p>
+                        </div>
+                        <div class="item_stats">
+                            <p>Item: <b>Level 4</b></p>
+                            <div class="WorthBar">
+                                <div class="barFill" style="background-color:#FF6300; width: 73px;"></div><div class="barRemain" style="background-color:#FFD8BF; width: 27px;"></div>
+                            </div>
+                            <p class="worth">$73,310</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2>Some Title or Other</h2>
+                    <div class="summary">
+                        <p>Vestibulum viverra lobortis turpis, sit amet accumsan est aliquam sed. Proin viverra, erat scelerisque porta posuere; arcu elit mattis quam, id sodales metus dolor a diam! Quisque imperdiet vehicula varius. Phasellus congue condimentum mattis. Proin nec enim vitae leo lobortis aliquam a eget nibh. Nunc ac gravida quam? Nam interdum odio non sapien tincidunt scelerisque! Praesent justo enim, tristique et pellentesque at, tempor nec enim? Suspendisse potenti. Mauris id libero sapien, sed volutpat urna. Aliquam auctor, metus eu dapibus gravida, nulla orci sollicitudin nulla, vitae molestie nulla mi ac nulla. Aenean egestas, lacus ac ultrices rhoncus, diam mi ullamcorper augue, non adipiscing erat tellus vitae ligula? Fusce nulla odio; lacinia eu tempor eget, dictum at purus. Sed fringilla accumsan risus id condimentum. Curabitur et nisi augue. Phasellus iaculis venenatis ante dignissim vestibulum. Proin eu augue ac augue imperdiet suscipit. Vestibulum et urna eros, quis aliquet enim!</p>
+                    </div>
+                </div>
+            </div>
+
+    </div></body>
+</html>
